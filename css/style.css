@@ -1,0 +1,19 @@
+*{
+    background-color: darkgrey;
+}
+
+.form1{
+    background-color: darksalmon;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: auto;    
+}
+.form1 label{
+    line-height: 40px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 30%;
+    text-align: center;
+}

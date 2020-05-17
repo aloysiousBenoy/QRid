@@ -15,6 +15,13 @@ main{
     justify-content: flex-start;
     align-items: center;
 }
+fieldset{
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
 .form1{
     background-color: dodgerblue;
     border-radius: 5px;
@@ -33,6 +40,23 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+   
+}
+.submit{
+    align-self: center;
+    width: 25%;
+    background-color:rgb(228, 255, 188);
+}
+.submit:hover{
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+   animation-name: button-color;
+}
+@keyframes button-color{
+    100%{
+        background-color: greenyellow;
+        transform: scale(1.2);
+    }
 }
 
 footer{

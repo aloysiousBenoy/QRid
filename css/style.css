@@ -1,24 +1,56 @@
-*{
-    background-color: darkgrey;
+body{
+    background-color: dimgray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form1{
+    background-color: dodgerblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height:300px;
+    width: 50%;   
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
-.form1{
-    background-color: darksalmon;
-    border-radius: 2px;
-    box-sizing: border-box;
-    height: auto;    
-}
 .form1 label{
     line-height: 40px;
 }
 footer{
     position: fixed;
-    bottom: 0;
-    left: 30%;
+    bottom: -45px;
+    width: fit-content;
+    left: 35%;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    animation-iteration-count: 1;
+}
+footer:hover{
+    
+    animation-name: raise-footer ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes raise-footer{
+    100%{
+        bottom: 5px;
+        background-color: gainsboro;
+    }
+}
 @media only screen and (max-width: 460px){
+   
+   p{
+       font-size: large;
+   }
     body{
         max-height: 600px;
         max-width: 400px;
